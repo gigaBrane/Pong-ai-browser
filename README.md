@@ -5,4 +5,4 @@ A while back I did a Machine Learning tutorial which used NEAT-AI to train a pon
 
 Following training using NEAT algorithms, the AI plays pong to a high standard. 
 
-For the purposes of my portfolio I connected the AI to a JS browser. 
+For the purposes of my portfolio I connected the AI to a JS frontend. 
