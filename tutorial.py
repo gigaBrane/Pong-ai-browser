@@ -122,7 +122,7 @@ def run_neat(config):
     p.add_reporter(neat.Checkpointer(1))
 
     winner = p.run(eval_genomes, 50)
-    with open("best.pickle", "wb") as f:
+    with open("/Users/daniel/Documents/Coding/PongTogether/Neat-ai-Pong/best.pickle", "wb") as f:
         pickle.dump(winner, f)
 
 
@@ -130,7 +130,7 @@ def test_ai(config):
     width, height = 700, 500
     window = pygame.display.set_mode((width, height))
 
-    with open("best.pickle", "rb") as f:
+    with open("/Users/daniel/Documents/Coding/PongTogether/Neat-ai-Pong/best.pickle", "rb") as f:
         winner = pickle.load(f)
 
     game = PongGame(window, width, height)
@@ -144,5 +144,5 @@ if __name__ == "__main__":
     config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction,
                          neat.DefaultSpeciesSet, neat.DefaultStagnation,
                          config_path)
-    run_neat(config)
-    # test_ai(config)
+    #run_neat(config)
+    test_ai(config)

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong AI</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+            color: #FFF;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+
+        canvas {
+            display: none;
+            border: 2px solid #FFFFFF;
+        }
+
+        #startScreen {
+            text-align: center;
+        }
+
+        .gameButton {
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="startScreen">
+        <h1>Welcome to Pong AI</h1>
+        <button class="gameButton" data-points="5">First to 5</button>
+        <button class="gameButton" data-points="11">First to 11</button>
+        <button class="gameButton" data-points="21">First to 21</button>
+    </div>
+    <canvas id="pongCanvas" width="700" height="500"></canvas>
+    <script src="static/script.js"></script>
+</body>
+</html>
